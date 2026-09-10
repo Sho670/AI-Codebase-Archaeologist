@@ -551,4 +551,199 @@ This gives you good practice with REST APIs.
 
 
 
+14. 🔐 Important Security
+Because users are uploading code, security is important.
 
+At minimum, don't allow sensitive files such as:
+
+.env
+.env.local
+private keys
+SSH keys
+Never Execute Uploaded Code
+The application should:
+
+READ + ANALYZE
+and never:
+
+EXECUTE UPLOADED CODE
+Also implement:
+
+ZIP file size limits
+
+File type validation
+
+Path traversal protection during ZIP extraction
+
+Private uploaded files
+
+API keys stored only on the backend
+
+15. 🧠 How Gemini Fits In
+Initially, you can have around four major AI operations.
+
+Project Summary
+Project Files
+     ↓
+Gemini
+     ↓
+Project Overview
+File Explanation
+File Content
+     ↓
+Gemini
+     ↓
+Explanation
+Question Answering
+Question + Project Context
+     ↓
+Gemini
+     ↓
+Answer
+Documentation
+Project Information
+     ↓
+Gemini
+     ↓
+README / Documentation
+Later With RAG
+Once RAG is added:
+
+Question
+   ↓
+RAG
+   ↓
+Relevant Code
+   ↓
+Gemini
+   ↓
+Answer
+16. 🚫 What NOT to Build Initially
+Do not start with all the advanced features.
+
+Avoid these in Version 1:
+
+❌ RAG
+❌ Vector databases
+❌ GitHub integration
+❌ Dependency graphs
+❌ Code execution
+❌ AI bug detection
+❌ Multi-agent systems
+❌ Voice interaction
+❌ Complex architecture diagrams
+These features can be added later.
+
+The goal is to first build a working and polished application.
+
+17. 🗺️ Development Roadmap
+Build the application in phases.
+
+Phase 1 — Foundation
+Learn/build:
+
+React
+Express
+MongoDB
+JWT
+Implement:
+
+User registration
+
+User login
+
+Logout
+
+Protected dashboard
+
+Phase 2 — Project Management
+Implement:
+
+Create project
+
+Upload ZIP
+
+Extract ZIP
+
+Store project metadata
+
+Display file tree
+
+At this point, you already have a functioning full-stack application.
+
+Phase 3 — Gemini
+Add:
+
+Project → AI Summary
+File → AI Explanation
+Question → AI Answer
+Now the application becomes a GenAI application.
+
+Phase 4 — Polish
+Add:
+
+Chat history
+
+Documentation generation
+
+Technology detection
+
+Better UI
+
+Loading states
+
+Error handling
+
+Markdown rendering
+
+Code syntax highlighting
+
+Phase 5 — RAG 🚀
+Only after everything above works.
+
+Then learn:
+
+Chunking
+   ↓
+Embeddings
+   ↓
+Vector Database
+   ↓
+Similarity Search
+   ↓
+RAG
+There is no need to rush into this phase.
+
+18. 🎯 Final Version 1 Feature Set
+The final Version 1 can look like:
+
+              AI CODEBASE EXPLAINER
+                       │
+        ┌──────────────┼──────────────┐
+        ↓              ↓              ↓
+    Authentication   Projects       Profile
+                       │
+                       ↓
+                  Upload ZIP
+                       │
+                       ↓
+                 File Explorer
+                       │
+          ┌────────────┼────────────┐
+          ↓            ↓            ↓
+      AI Summary   Explain File   AI Chat
+          │            │            │
+          └────────────┼────────────┘
+                       ↓
+              Documentation
+                 Generator
+⭐ Project Philosophy
+Don't think of this project as:
+
+"I'm building a website that calls Gemini."
+
+Instead, think of it as:
+
+"I'm building a developer productivity tool, and Gemini is one component inside it."
+
+This mindset will help you make better architectural decisions.
