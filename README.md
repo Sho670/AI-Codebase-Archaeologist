@@ -417,3 +417,138 @@ Later, RAG can be introduced to automatically find the relevant files.
 
 
 
+10. 📄 AI Documentation Generator
+Add a button:
+
+Generate Documentation
+Gemini can generate:
+
+# E-Commerce Application
+
+## Overview
+
+...
+
+## Technologies
+
+- React
+- Node.js
+- Express
+- MongoDB
+
+## Project Structure
+
+...
+
+## Authentication
+
+...
+
+## API Endpoints
+
+...
+
+## Database
+
+...
+
+## Getting Started
+
+...
+The user can eventually download this as:
+
+Markdown
+
+PDF
+
+This is an excellent additional feature because it is useful and relatively straightforward to implement.
+
+11. 🔍 Technology Detection
+When the project is uploaded, inspect files such as:
+
+package.json
+requirements.txt
+pom.xml
+composer.json
+Then display:
+
+Detected Technologies
+
+⚛️ React
+🟢 Node.js
+🚂 Express
+🍃 MongoDB
+🔐 JWT
+Not everything needs AI.
+
+For example, if package.json contains:
+
+{
+  "dependencies": {
+    "react": "..."
+  }
+}
+you can determine that React is being used through normal programming logic.
+
+This is a good example of combining:
+
+Traditional Programming + AI
+12. 🗃️ Database Design
+Keep the MongoDB structure relatively simple.
+
+User
+User
+├── name
+├── email
+├── password
+└── createdAt
+Project
+Project
+├── userId
+├── name
+├── description
+├── technologies
+├── fileCount
+├── uploadPath
+├── aiSummary
+└── createdAt
+ProjectFile
+ProjectFile
+├── projectId
+├── fileName
+├── filePath
+├── language
+├── content
+└── createdAt
+Chat
+Chat
+├── projectId
+├── userId
+├── question
+├── answer
+└── createdAt
+13. 🔌 Backend API
+The Express API could look like:
+
+POST   /api/auth/register
+POST   /api/auth/login
+
+GET    /api/projects
+POST   /api/projects
+GET    /api/projects/:id
+DELETE /api/projects/:id
+
+POST   /api/projects/:id/upload
+
+GET    /api/projects/:id/files
+GET    /api/projects/:id/files/:fileId
+
+POST   /api/projects/:id/explain
+POST   /api/projects/:id/chat
+
+POST   /api/projects/:id/documentation
+This gives you good practice with REST APIs.
+
+
+
+
