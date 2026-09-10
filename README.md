@@ -117,17 +117,27 @@ Node.js + Express
 Responsible for:
 
 ```text
-Authentication
+              Authentication
+                     │
+                     ▼
 
-File uploads
+                File uploads
+                     │
+                     ▼
 
-ZIP extraction
+              ZIP extraction
+                     │
+                     ▼
 
-Project processing
+            Project processing
+                     │
+                     ▼
 
-Gemini API communication
+          Gemini API communication
+                     │
+                     ▼
 
-Database operations
+            Database operations
 
 ```
 Useful Packages
@@ -159,18 +169,18 @@ AI
 Google Gemini API
 Gemini can be used for:
 
-Project summary
-```text
-File explanation
+Project summary:
 
-Code explanation
+1. File explanation
 
-Question answering
+2. Code explanation
 
-Technology identification
+3. Question answering
 
-Documentation generation
-```
+4. Technology identification
+
+5. Documentation generation
+
 Initially, we will not use RAG or embeddings.
 
 Authentication
@@ -231,18 +241,23 @@ How it works
 
 Technology stack
 
-Login/Register buttons
+          Login/Register buttons
+                     │
+                     ▼
+              Login/Register
+      Standard authentication interface.
+                     │
+                     ▼
+                    Email
+                  Password
+                     │
+                     ▼
+                  [Login]
+                     │
+                     ▼
+            Don't have an account?
+                  Register
 
-② Login/Register
-Standard authentication interface.
-
-Email
-Password
-
-[Login]
-
-Don't have an account?
-Register
 ③ Dashboard
 After logging in:
 
