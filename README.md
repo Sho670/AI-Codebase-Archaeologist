@@ -69,10 +69,13 @@ The complete Version 1 flow:
 
 
 3. 🛠️ Tech Stack
+
+   
 Frontend
 React + Vite
 Used for:
 
+```text
 Dashboard
 
 Login/Register
@@ -94,10 +97,14 @@ Tailwind CSS → Styling
 
 Lucide React → Icons
 
+```
+
+
 Backend
 Node.js + Express
 Responsible for:
 
+```text
 Authentication
 
 File uploads
@@ -110,7 +117,9 @@ Gemini API communication
 
 Database operations
 
+```
 Useful Packages
+```text
 express
 mongoose
 jsonwebtoken
@@ -119,14 +128,17 @@ multer
 unzipper
 dotenv
 cors
+
+```
 Database
 MongoDB
 Store:
-
+```text
 Users
 Projects
 Files
 Chat History
+```
 Initially, the complete codebase does not need to be stored directly in MongoDB.
 
 Project metadata and extracted files can be stored separately depending on the deployment strategy.
@@ -136,7 +148,7 @@ Google Gemini API
 Gemini can be used for:
 
 Project summary
-
+```text
 File explanation
 
 Code explanation
@@ -146,13 +158,13 @@ Question answering
 Technology identification
 
 Documentation generation
-
+```
 Initially, we will not use RAG or embeddings.
 
 Authentication
 JWT + bcrypt
 Authentication flow:
-
+```text
 Register
    ↓
 Hash Password
@@ -167,10 +179,10 @@ Generate JWT
    ↓
 Frontend Stores Token
 Protected routes require a valid JWT.
-
+```
 File Processing
 Use:
-
+```text
 Multer → Receive ZIP files
 
 Unzipper / JSZip → Extract ZIP files
@@ -185,7 +197,7 @@ models/
 components/
 README.md
 
-
+```
 4. 🖥️ Main Pages
 The application can initially contain around 6 main pages.
 
