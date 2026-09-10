@@ -76,26 +76,38 @@ React + Vite
 Used for:
 
 ```text
-Dashboard
+                  Dashboard
+                     │
+                     ▼
 
-Login/Register
+                Login/Register
+                     │
+                     ▼
 
-File upload
+                File upload
+                     │
+                     ▼
 
-Project explorer
+              Project explorer
+                     │
+                     ▼
 
-Chat interface
+                Chat interface
+                     │
+                     ▼
 
-AI responses
+                AI responses
+                     │
+                     ▼
 
-Additional Frontend Libraries
-React Router → Routing
+        Additional Frontend Libraries
+            React Router → Routing
 
-Axios → API requests
+            Axios → API requests
 
-Tailwind CSS → Styling
+            Tailwind CSS → Styling
 
-Lucide React → Icons
+              Lucide React → Icons
 
 ```
 
