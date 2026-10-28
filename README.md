@@ -20,13 +20,12 @@
   <b>🔨 I'm still working on this project, fixing bugs, adding features, and occasionally questioning my life choices. ☕🐛</b><br>
 </p>
 
+<p align="center">
+  <b>⚠️ Don't judge the developer by just one project!  🚀 Explore my other projects too! 👀 There's more to my work than what meets the eye.</b><br>
+</p>
 
-⚠️ Don't judge the developer by just one project! 😂
-I'm still working on this one — even the code needs time to glow up. ✨💻
 
-🚀 Explore my other projects too!
-👀 There's more to my work than what meets the eye.
-
+---
 # 1. 🎯 What Problem Does It Solve?
 
 When developers join an existing project, they often face questions like:
