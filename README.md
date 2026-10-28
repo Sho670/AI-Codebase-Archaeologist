@@ -1,14 +1,21 @@
-# AI-Codebase-Archaeologist
 
-> An AI-powered developer tool that allows users to upload a codebase and interact with it using natural language to understand its structure, files, functionality, and code.
+
+# <p align="center" style="font-size: 55px;">☕ <b>AI-Codebase-Archaeologist</b></p>
+
+<p align="center">
+  <b>An AI-powered developer tool that allows users to upload a codebase and interact with it using natural language to understand its structure, files, functionality, and code.</b><br>
+  <i>Write Once, Run Anywhere. 🚀🚀🚀 </i>
+</p>
+
+
+---
+
 
 ---
 
 🚧 Currently cooking something amazing... 👨‍💻🔥
 
 🔨 I'm still working on this project, fixing bugs, adding features, and occasionally questioning my life choices. ☕🐛
-
-💡 There's more to explore! Don't stop at this repository — check out my other projects too. You might find something interesting! 👀✨
 
 ⚠️ Don't judge the developer by just one project! 😂
 I'm still working on this one — even the code needs time to glow up. ✨💻
