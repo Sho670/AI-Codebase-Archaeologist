@@ -7,15 +7,19 @@
   <i>Write Once, Run Anywhere. 🚀🚀🚀 </i>
 </p>
 
-
 ---
 
 
 ---
+<p align="center">
+  <b>🚧 Currently cooking something amazing... 👨‍💻🔥</b><br>
+</p>
 
-🚧 Currently cooking something amazing... 👨‍💻🔥
 
-🔨 I'm still working on this project, fixing bugs, adding features, and occasionally questioning my life choices. ☕🐛
+<p align="center">
+  <b>🔨 I'm still working on this project, fixing bugs, adding features, and occasionally questioning my life choices. ☕🐛</b><br>
+</p>
+
 
 ⚠️ Don't judge the developer by just one project! 😂
 I'm still working on this one — even the code needs time to glow up. ✨💻
