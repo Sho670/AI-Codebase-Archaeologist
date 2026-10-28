@@ -183,10 +183,7 @@ Projects
 Files
 Chat History
 ```
-Initially, the complete codebase does not need to be stored directly in MongoDB.
-
-Project metadata and extracted files can be stored separately depending on the deployment strategy.
-
+---
 AI
 Google Gemini API
 Gemini can be used for:
@@ -202,8 +199,7 @@ Project summary:
 4. Technology identification
 
 5. Documentation generation
-
-Initially, we will not use RAG or embeddings.
+---
 
 Authentication
 JWT + bcrypt
@@ -243,7 +239,7 @@ README.md
 
 ```
 4. 🖥️ Main Pages
-The application can initially contain around 6 main pages.
+The application will initially contain around 6 main pages.
 
 ① Landing Page
 A simple marketing/home page.
@@ -280,28 +276,8 @@ Technology stack
             Don't have an account?
                   Register
 
-③ Dashboard
-After logging in:
 
-Hello, Developer 👋
-
-Your Projects
-
-┌─────────────────────┐
-│ E-commerce App      │
-│ React + Node + Mongo│
-│ Updated 2 hours ago │
-└─────────────────────┘
-
-┌─────────────────────┐
-│ Chat Application    │
-│ MERN                │
-│ Updated yesterday   │
-└─────────────────────┘
-
-       [+ New Project]
-The dashboard displays the user's projects.
-
+---
 5. 📦 Project Upload
 User clicks:
 
@@ -322,7 +298,6 @@ Upload your project
 After upload:
 
 Uploading...
-██████████████░░░░
 
 Extracting files...
 Analyzing project...
@@ -331,6 +306,7 @@ Analyzing project...
 ✓ Files detected
 ✓ Technologies identified
 ✓ Project summary generated
+---
 6. 🧠 Project Overview
 This is one of the most important screens.
 
@@ -368,7 +344,7 @@ Important Files
 📄 authController.js
 📄 productController.js
 Gemini generates the project overview.
-
+---
 7. 📂 File Explorer
 Create a simple file browser.
 
@@ -390,24 +366,7 @@ Project
 │
 ├── package.json
 └── README.md
-When the user clicks:
-
-authController.js
-Show:
-
-┌─────────────────────────────────────┐
-│ authController.js                   │
-├─────────────────────────────────────┤
-│                                     │
-│ const loginUser = async (...) => {  │
-│     ...                             │
-│ }                                   │
-│                                     │
-└─────────────────────────────────────┘
-
-        [✨ Explain This File]
-
-
+---
 
 8. 🤖 AI Code Explanation
 When the user clicks:
@@ -436,7 +395,7 @@ Handles the login request...
 generateToken()
 Creates the JWT...
 This is one of the primary AI features.
-
+---
 9. 💬 AI Codebase Chat
 Create a ChatGPT-like interface.
 
@@ -463,68 +422,10 @@ Example:
 ├────────────────────────────────────────┤
 │ Ask about your code...           [➤]  │
 └────────────────────────────────────────┘
-Important
-Version 1 will NOT use RAG.
-
-Initially, provide Gemini with:
-
-Project summary
-
-Relevant selected files
-
-User's question
-
-Later, RAG can be introduced to automatically find the relevant files.
+---
 
 
-
-10. 📄 AI Documentation Generator
-Add a button:
-
-Generate Documentation
-Gemini can generate:
-
-# E-Commerce Application
-
-## Overview
-
-...
-
-## Technologies
-
-- React
-- Node.js
-- Express
-- MongoDB
-
-## Project Structure
-
-...
-
-## Authentication
-
-...
-
-## API Endpoints
-
-...
-
-## Database
-
-...
-
-## Getting Started
-
-...
-The user can eventually download this as:
-
-Markdown
-
-PDF
-
-This is an excellent additional feature because it is useful and relatively straightforward to implement.
-
-11. 🔍 Technology Detection
+10. 🔍 Technology Detection
 When the project is uploaded, inspect files such as:
 
 package.json
@@ -540,7 +441,6 @@ Detected Technologies
 🚂 Express
 🍃 MongoDB
 🔐 JWT
-Not everything needs AI.
 
 For example, if package.json contains:
 
@@ -554,8 +454,9 @@ you can determine that React is being used through normal programming logic.
 This is a good example of combining:
 
 Traditional Programming + AI
-12. 🗃️ Database Design
-Keep the MongoDB structure relatively simple.
+---
+11. 🗃️ Database Design
+Keeping the MongoDB structure relatively simple.
 
 User
 User
@@ -588,6 +489,7 @@ Chat
 ├── question
 ├── answer
 └── createdAt
+---
 13. 🔌 Backend API
 The Express API could look like:
 
@@ -612,7 +514,7 @@ This gives you good practice with REST APIs.
 
 
 
-14. 🔐 Important Security
+13. 🔐 Important Security
 Because users are uploading code, security is important.
 
 At minimum, don't allow sensitive files such as:
@@ -639,8 +541,8 @@ Path traversal protection during ZIP extraction
 Private uploaded files
 
 API keys stored only on the backend
-
-15. 🧠 How Gemini Fits In
+---
+14. 🧠 How Gemini Fits In
 Initially, you can have around four major AI operations.
 
 Project Summary
@@ -679,24 +581,8 @@ Relevant Code
 Gemini
    ↓
 Answer
-16. 🚫 What NOT to Build Initially
-Do not start with all the advanced features.
 
-Avoid these in Version 1:
-
-❌ RAG
-❌ Vector databases
-❌ GitHub integration
-❌ Dependency graphs
-❌ Code execution
-❌ AI bug detection
-❌ Multi-agent systems
-❌ Voice interaction
-❌ Complex architecture diagrams
-These features can be added later.
-
-The goal is to first build a working and polished application.
-
+---
 17. 🗺️ Development Roadmap
 Build the application in phases.
 
@@ -759,22 +645,7 @@ Markdown rendering
 
 Code syntax highlighting
 
-Phase 5 — RAG 🚀
-Only after everything above works.
-
-Then learn:
-
-Chunking
-   ↓
-Embeddings
-   ↓
-Vector Database
-   ↓
-Similarity Search
-   ↓
-RAG
-There is no need to rush into this phase.
-
+---
 18. 🎯 Final Version 1 Feature Set
 The final Version 1 can look like:
 
@@ -798,13 +669,3 @@ The final Version 1 can look like:
                        ↓
               Documentation
                  Generator
-⭐ Project Philosophy
-Don't think of this project as:
-
-"I'm building a website that calls Gemini."
-
-Instead, think of it as:
-
-"I'm building a developer productivity tool, and Gemini is one component inside it."
-
-This mindset will help you make better architectural decisions.
